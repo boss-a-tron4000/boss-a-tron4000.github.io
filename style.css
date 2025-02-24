@@ -1,0 +1,221 @@
+html {
+    scroll-behavior: smooth;
+  }
+
+body{
+    margin-top: 175px;
+    margin-left: 0px;
+    margin-right: 0px;
+    background-color: #404040;
+    color: white;
+    font-family: Sriracha, sans-serif;
+}
+
+.sriracha-regular {
+    font-family: "Sriracha", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+a{
+    text-decoration: none;
+    color:#ffffff;
+}
+
+.mItem{
+    font-size: 40px;   
+    display: inline-block;
+    margin: 20px;
+    padding: 5px;
+    list-style: none;
+    text-align: center;
+    opacity: 25%;
+
+
+}
+.mItem:hover{
+    background-color: #242424;
+    border-radius: 10px;
+    opacity: 100%;
+}
+
+.mBar{
+    margin: 0;
+    padding: 0;
+    background-color:#181818;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+}
+
+.mBar:hover{
+    padding: 25px;
+}
+
+.imgBar{
+    max-width: 75px;
+    max-height: 75px;
+    border-radius: 10px;
+    vertical-align: middle;
+    font-weight: bold;
+}
+
+.centerTxt{
+    text-align: center;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+.indentTxt{
+    margin-left: 20px;
+}
+
+li{
+    list-style-type: none;
+    font-size: large;
+}
+
+.eventsP{
+    padding-left: 20px;
+}
+
+.mainImg{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 25%;
+    border-radius: 20px;
+}
+
+strong{
+    font-size: 18px;
+}
+
+
+
+.discordBox{
+    display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 420px; 
+      background-color: #23272a;
+      border-radius: 8px;
+      padding: 16px;
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      color: #fff;
+      margin-left: 20px;
+}
+
+.join-button {
+    background-color:  #3ba55c;
+    color: #ffffff;
+    padding: 10px 16px;
+    border-radius: 4px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 15.68px;
+    transition: background-color 0.2s;
+
+    
+  }
+  .join-button:hover {
+    background-color:  #2b6f40;
+  }
+
+  .invite-right {
+    margin-left: 16px;
+    display: flex;
+    align-items: center;
+  }
+
+  .invite-left {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+  }
+
+  .invite-details {
+    display: flex;
+    align-items: center;
+  }
+
+  .server-icon {
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    margin-right: 12px;
+    object-fit: cover;
+    background-color: #2C2F33;
+  }
+
+  .server-info {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .server-name {
+    margin: 0;
+    font-size: 19.2px;
+    font-weight: 700;
+  }
+
+  .server-sub {
+    margin: 4px 0 0;
+    font-size: 10px;
+    color: #f0f0f0;
+  }
+
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 700px);
+    grid-gap: 20px;
+    justify-content:center; 
+  }
+  .grid-box {
+    width: 700px;
+    height: 350px;
+    background-color:  #302f2f;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+  }
+
+  .grid-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+  }
+
+  .cal-button {
+    background-color:  #3ba55c;
+    color: #ffffff;
+    padding: 10px 16px;
+    margin-left: 50px;
+    border-radius: 4px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 15.68px;
+    transition: background-color 0.2s;
+
+    
+  }
+  .cal-button:hover {
+    background-color:  #2b6f40;
+  }
+
+  .event1{
+    margin-top: 50px;
+  }
+
+p{
+    font-size: 18px;
+}
+
+.cal{
+    display: flex;
+    justify-content: center;
+    
+}
