@@ -47,25 +47,45 @@
 
         <h3 class="indentTxt" id="discord">Join Our Discord!</h3>
 
-            <div class="discordBox">
-
-                <div class="invite-left">
-                    <div class="invite-details">
-                      <img id="server-icon" class="server-icon" 
-                           src="images/CA_Zoom.png" 
-                           alt="Server Icon">
-                      <div class="server-info">
+        <div class="discordBox">
+            <div class="invite-left">
+                <div class="invite-details">
+                    <img id="server-icon" class="server-icon" 
+                         src="images/CA_Zoom.png" 
+                         alt="Server Icon">
+                    <div class="server-info">
                         <h2 id="server-name" class="server-name">Creator Awards 2025</h2>
-                        <p id="server-sub" class="server-stats">Offical Server</p>
-                      </div>
+                        <p id="server-sub" class="server-sub">Official Server</p>
                     </div>
                 </div>
-
-                <div class="invite-right">
-                    <a class="join-button" href="https://discord.gg/YACusSBMJZ" target="_blank">Join</a>
-                </div>
-
             </div>
+        
+            <div class="invite-right">
+                <a class="join-button" href="https://discord.gg/YACusSBMJZ" target="_blank">Join</a>
+            </div>
+        </div>
+        
+        <script>
+            // Array of image paths
+            const images = [
+                "images/CA_Zoom.png",
+                // "images/CA.png",
+                // "images/PlatVSHydra.png",
+                // "images/Shrinacle.png"
+            ];
+        
+            let currentIndex = 0;
+            const imgElement = document.getElementById("server-icon");
+        
+            function changeImage() {
+                currentIndex = (currentIndex + 1) % images.length;
+                imgElement.src = images[currentIndex];
+            }
+        
+            // Change interval -> 1000 per sec
+            setInterval(changeImage, 2000);
+        </script>
+        
 
             <br>
     </body>
