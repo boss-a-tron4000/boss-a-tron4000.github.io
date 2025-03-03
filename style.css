@@ -1,5 +1,6 @@
 html {
     scroll-behavior: smooth;
+    overflow-x: hidden;
   }
 
 body{
@@ -9,6 +10,7 @@ body{
     background-color: #404040;
     color: white;
     font-family: Sriracha, sans-serif;
+    overflow-x: hidden;
 }
 
 .sriracha-regular {
@@ -43,6 +45,7 @@ a{
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-wrap: wrap;
   padding: 10px;
   background-color: #181818;
   position: fixed;
@@ -187,19 +190,6 @@ strong{
     object-fit: cover; 
 }
 
-@media only screen and (max-width: 600px) {
-  .grid-container {
-    display: grid;
-    grid-template-columns: repeat(1, 100%); 
-    grid-gap: 20px;
-    justify-content: center; 
-  }
-  .grid-box {
-    width: 100%; /* Ensure boxes shrink to fit */
-  }
-}
-
-
 
   .cal-button {
     background-color:  #3ba55c;
@@ -296,3 +286,24 @@ p{
   align-items: center;
   gap: 20px;
 }
+
+@media only screen and (max-width: 600px) {
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(1, 100%); 
+    grid-gap: 20px;
+    justify-content: center; 
+  }
+  .grid-box {
+    width: 100%; /* Ensure boxes shrink to fit */
+  }
+  .mBar {
+    flex-direction: column; /* Stack menu items on small screens */
+    text-align: center;
+}
+
+.mBar .mItem {
+    margin: 5px 0; /* Adds spacing for stacked items */
+}
+}
+
