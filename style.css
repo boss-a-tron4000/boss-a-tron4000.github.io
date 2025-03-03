@@ -169,36 +169,32 @@ strong{
     grid-template-columns: repeat(2, 700px); 
     grid-gap: 20px;
     justify-content: center; 
-}
+  }
 
-/*Make it a single column on smaller screens */
-@media (max-width: 100px) { 
-      .grid-container {
-        grid-template-columns: 1fr;
-    }
-    .grid-box {
-        width: 100%; 
-        max-width: 90%; 
-        margin: auto;
-    }
-    .grid-box img {
-      width: 100%; 
-      max-width: 95%; 
-    }
-}
 
-.grid-box {
-    background-color: #302f2f;
-    border: 1px solid #ccc;
-    border-radius: 10px;
-    overflow: hidden;
-    position: relative;
-}
+  .grid-box {
+      background-color: #302f2f;
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      overflow: hidden;
+      position: relative;
+  }
+
 
 .grid-box img {
     width: 100%;
     height: auto;
     object-fit: cover; 
+}
+
+@media only screen and (max-width: 600px) {
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(1, 700px); 
+    grid-gap: 20px;
+    justify-content: center; 
+  }
+  
 }
 
 
