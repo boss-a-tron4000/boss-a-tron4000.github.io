@@ -194,6 +194,9 @@ strong{
     grid-gap: 20px;
     justify-content: center; 
   }
+  .grid-box {
+    width: 100%; /* Ensure boxes shrink to fit */
+  }
 }
 
 
