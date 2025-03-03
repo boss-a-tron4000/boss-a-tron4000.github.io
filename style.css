@@ -90,8 +90,6 @@ strong{
     font-size: 18px;
 }
 
-
-
 .discordBox{
     display: flex;
       justify-content: space-between;
@@ -102,7 +100,7 @@ strong{
       padding: 16px;
       font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
       color: #fff;
-      margin-left: 500px;
+      margin: 0 auto;
 }
 
 .join-button {
@@ -251,7 +249,7 @@ p{
 .expand-btn {
   position: fixed;
   right: 20px;
-  padding: 10px 15px;
+  padding: 5px 15px;
   background-color: #444;
   color: white;
   border: none;
