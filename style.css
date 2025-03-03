@@ -172,21 +172,18 @@ strong{
 }
 
 /*Make it a single column on smaller screens */
-@media (max-width: 600px) { 
-  .grid-container {
-    display: grid;
-    grid-template-columns: 1fr; /* Forces a single column */
-    gap: 10px; /* Adds some spacing between images */
-    justify-items: center; /* Centers items */
-}
+@media (max-width: 100px) { 
+      .grid-container {
+        grid-template-columns: 1fr;
+    }
     .grid-box {
         width: 100%; 
         max-width: 90%; 
         margin: auto;
     }
     .grid-box img {
-      width: 100%; /* Ensures images take up full width */
-      max-width: 95%; /* Slight padding on the sides */
+      width: 100%; 
+      max-width: 95%; 
     }
 }
 
