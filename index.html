@@ -3,6 +3,7 @@
         <title>Creator Awards</title>
         <link href="style.css" type="text/css" rel="stylesheet">
         <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+        <script src="script.js"></script>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 
         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -12,8 +13,10 @@
 
     <body>
         <ul class="mBar">
+            <li class="logo">
+                <img src="images/CA_Zoom.png" class="logo-img">
             <li class="mItem"><a href="index.html">About</a></li>
-            <li class="mItem"><a href="events.html"><img src="images/CA_Zoom.png" class="imgBar"></a></li>
+            <li class="mItem"><a href="events.html">Events</a></li>
             <li class="mItem"><a href="gallery.html">Gallery</a></li>
         </ul>
 
@@ -21,7 +24,7 @@
 
         <img src="images/CA.png" class="mainImg">
 
-        <h3 class="indentTxt" id="what">What are the Creator Awards?</h3>
+        <h3 class="centerTxt" id="what">What are the Creator Awards?</h3>
 
         <p class="centerTxt"> We believe small creators deserve to be seen just as much OR EVEN MORE 
             than big full time creators. Artists deserve to be recognized, small creators deserve to be recognized, and 
@@ -32,7 +35,7 @@
 
             <br>
 
-        <h3 class="indentTxt" id="keeg">The Creator - Keeg</h3>
+        <h3 class="centerTxt" id="keeg">The Creator - Keeg</h3>
 
         <p class="centerTxt" id="creator"> I'm Keegan / Keeg! At heart I am a creator coach, event planner, and networker for 
             smaller creators. I have always thought about how the big creators worked so hard to get where they are but it leaves 
@@ -45,7 +48,7 @@
 
         <br>
 
-        <h3 class="indentTxt" id="discord">Join Our Discord!</h3>
+        <h3 class="centerTxt" id="discord">Join Our Discord!</h3>
 
         <div class="discordBox">
             <div class="invite-left">
@@ -64,27 +67,7 @@
                 <a class="join-button" href="https://discord.gg/YACusSBMJZ" target="_blank">Join</a>
             </div>
         </div>
-        
-        <script>
-            // Array of image paths
-            const images = [
-                "images/CA_Zoom.png",
-                // "images/CA.png",
-                // "images/PlatVSHydra.png",
-                // "images/Shrinacle.png"
-            ];
-        
-            let currentIndex = 0;
-            const imgElement = document.getElementById("server-icon");
-        
-            function changeImage() {
-                currentIndex = (currentIndex + 1) % images.length;
-                imgElement.src = images[currentIndex];
-            }
-        
-            // Change interval -> 1000 per sec (currently 5 days)
-            setInterval(changeImage, 432000000);
-        </script>
+
         
 
             <br>

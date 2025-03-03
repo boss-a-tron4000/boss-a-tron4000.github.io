@@ -29,7 +29,7 @@ a{
     padding: 5px;
     list-style: none;
     text-align: center;
-    opacity: 25%;
+    /* opacity: 25%; */
 
 
 }
@@ -39,29 +39,30 @@ a{
     opacity: 100%;
 }
 
-.mBar{
-    margin: 0;
-    padding: 0;
-    background-color:#181818;
-    text-align: center;
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 1000;
+.mBar {
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Keep menu items centered */
+  padding: 10px;
+  background-color: #181818;
+  position: fixed;
+  top: -16;
+  left: 0;
+  right: 0;
+  z-index: 1000;
 }
 
 .mBar:hover{
     padding: 25px;
 }
 
-.imgBar{
+/* .imgBar{
     max-width: 75px;
     max-height: 75px;
     border-radius: 10px;
     vertical-align: middle;
     font-weight: bold;
-}
+} */
 
 .centerTxt{
     text-align: center;
@@ -75,10 +76,6 @@ a{
 li{
     list-style-type: none;
     font-size: large;
-}
-
-.eventsP{
-    padding-left: 20px;
 }
 
 .mainImg{
@@ -105,7 +102,7 @@ strong{
       padding: 16px;
       font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
       color: #fff;
-      margin-left: 80px;
+      margin-left: 500px;
 }
 
 .join-button {
@@ -208,9 +205,6 @@ strong{
     background-color:  #2b6f40;
   }
 
-  .event1{
-    margin-top: 50px;
-  }
 
 p{
     font-size: 18px;
@@ -220,4 +214,74 @@ p{
     display: flex;
     justify-content: center;
     
+}
+
+.dropdown {
+  margin-bottom: 5px;
+}
+
+.title {
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  padding: 10px;
+  /* background-color: #444; */
+  border-radius: 5px;
+  margin-bottom: 2px;
+}
+
+.description {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease-in-out, padding 0.5s ease-in-out;
+  /* background-color: #555; */
+  padding: 0 10px;
+  border-radius: 5px;
+}
+
+.description p {
+  margin: 10px 0;
+}
+
+.open {
+  max-height: 200px; /* Adjust as needed */
+  padding: 10px;
+}
+
+.expand-btn {
+  position: fixed;
+  right: 20px;
+  padding: 10px 15px;
+  background-color: #444;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.expand-btn:hover {
+  background-color: #555;
+}
+
+
+.logo {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 40px;
+}
+.logo-img {
+  max-width: 75px;
+  max-height: 75px;
+  border-radius: 10px;
+}
+
+.menu-items {
+  display: flex;
+  align-items: center;
+  gap: 20px;
 }
