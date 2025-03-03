@@ -316,11 +316,16 @@ p{
 }
 .centerTxt{
   text-align: center;
-  margin-left: 0px;
-  margin-right: 0px;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 .description.open {
   max-height: none;
+  
+}
+.discordBox {
+  width: 90%; /* or 100%, or adjust as needed */
+  margin: 0 auto;
 }
 }
 
