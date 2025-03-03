@@ -190,12 +190,12 @@ strong{
 @media only screen and (max-width: 600px) {
   .grid-container {
     display: grid;
-    grid-template-columns: repeat(1, 700px); 
+    grid-template-columns: repeat(1, 100%); 
     grid-gap: 20px;
     justify-content: center; 
   }
-  
 }
+
 
 
   .cal-button {
