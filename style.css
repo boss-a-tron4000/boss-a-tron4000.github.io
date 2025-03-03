@@ -314,5 +314,10 @@ p{
     font-size: 30px;
     margin: 5px 0;
 }
+.centerTxt{
+  text-align: center;
+  margin-left: 0px;
+  margin-right: 0px;
+}
 }
 
