@@ -295,6 +295,12 @@ p{
   gap: 20px;
 }
 
+.event_div{
+  border: 1px solid #606060;
+  margin-right: 15px;
+}
+
+
 @media only screen and (max-width: 600px) {
   .grid-container {
     display: grid;
