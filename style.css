@@ -1,16 +1,15 @@
 html {
     scroll-behavior: smooth;
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
   }
 
 body{
-    margin-top: 175px;
+    margin-top: 110px;
     margin-left: 0px;
     margin-right: 0px;
     background-color: #404040;
     color: white;
     font-family: Sriracha, sans-serif;
-    overflow-x: hidden;
 }
 
 .sriracha-regular {
@@ -25,7 +24,7 @@ a{
 }
 
 .mItem{
-    font-size: 40px;   
+    font-size: 30px;   
     display: inline-block;
     margin: 20px;
     padding: 5px;
@@ -46,7 +45,7 @@ a{
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
-  padding: 10px;
+  /* padding: 0px; */
   background-color: #181818;
   position: fixed;
   top: -16px;
@@ -56,7 +55,8 @@ a{
 }
 
 .mBar:hover{
-    padding: 25px;
+    padding-top: 25px;
+    padding-bottom: 25px;
 }
 
 /* .imgBar{
@@ -192,6 +192,9 @@ strong{
 
 
   .cal-button {
+    position: fixed;
+    right: 20px;
+    top:110px;
     color: #ffffff;
     margin-left: 25px;
     border-radius: 10px;
@@ -199,16 +202,11 @@ strong{
     font-weight: 600;
     font-size: 15.68px;
     transition: background-color 0.2s;
-    padding: 5px;
-    padding-top: 20px;
-    padding-bottom: 25px;
-    
-
     
   }
   .cal-button img{
-    max-width: 64px;
-    max-height: 64px;
+    max-width: 48px;
+    max-height: 48px;
     vertical-align: middle;
     
   }
@@ -258,8 +256,8 @@ p{
 }
 
 .expand-btn {
-  position: fixed;
-  right: 20px;
+  position:absolute;
+  left: 20px;
   padding: 5px 15px;
   background-color: #444;
   color: white;
@@ -274,7 +272,7 @@ p{
 }
 
 
-.logo {
+.menu {
     display: flex;
     align-items: center;
     position: absolute;
@@ -283,7 +281,7 @@ p{
     transform: translateY(-50%);
     height: 40px;
 }
-.logo-img {
+.menu-img {
   max-width: 75px;
   max-height: 75px;
   border-radius: 10px;
@@ -340,6 +338,10 @@ p{
 .discordBox {
   width: 90%; /* or 100%, or adjust as needed */
   margin: 0 auto;
+}
+.cal-button {
+  position:absolute;
+  
 }
 }
 
