@@ -192,20 +192,28 @@ strong{
 
 
   .cal-button {
-    background-color:  #3ba55c;
     color: #ffffff;
-    padding: 10px 16px;
-    margin-left: 50px;
-    border-radius: 4px;
+    margin-left: 25px;
+    border-radius: 10px;
     text-decoration: none;
     font-weight: 600;
     font-size: 15.68px;
     transition: background-color 0.2s;
+    padding: 5px;
+    padding-top: 20px;
+    padding-bottom: 25px;
+    
 
     
   }
+  .cal-button img{
+    max-width: 64px;
+    max-height: 64px;
+    vertical-align: middle;
+    
+  }
   .cal-button:hover {
-    background-color:  #2b6f40;
+    background-color:  #575656;
   }
 
 
