@@ -15,3 +15,11 @@ function toggleAll() {
         }
     });
 }
+document.addEventListener("DOMContentLoaded", function () {
+    const menuToggle = document.querySelector(".menu-toggle");
+    const menu = document.querySelector(".mBar");
+
+    menuToggle.addEventListener("click", function () {
+        menu.classList.toggle("active");
+    });
+});
