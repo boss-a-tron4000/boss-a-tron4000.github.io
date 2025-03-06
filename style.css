@@ -302,6 +302,54 @@ p{
   display: none;
 }
 
+
+/*Give the dropdown parent a relative position */
+.dropdown {
+  position: relative;
+}
+
+/*Initially hide the dropdown content */
+.dropdown-content {
+  display: none;
+  position: absolute; 
+  background-color: #242424; 
+  padding: 5px 0;
+  margin-top: 5px;           
+  border-radius: 5px;
+  min-width: 120px;         
+  z-index: 9999;            
+}
+
+/*Style each link inside the dropdown */
+.dropdown-content li {
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+
+.dropdown-content a {
+  display: block;
+  padding: 5px 15px;
+  text-decoration: none;
+  color: #fff;
+  white-space: nowrap;
+}
+
+.dropdown-content a:hover {
+  background-color: #333;
+}
+
+/*Reveal the dropdown on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+
+
+
+
+
+
 @media only screen and (max-width: 700px) {
   .grid-container {
     display: grid;
