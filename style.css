@@ -25,12 +25,13 @@ a{
 
 .mItem{
     font-size: 30px;   
-    display: inline-block;
+    display: flex;
+    align-items: center;
+    height: 100%;
     margin: 20px;
     padding: 5px;
     list-style: none;
     text-align: center;
-    /* opacity: 25%; */
 
 
 }
@@ -313,6 +314,8 @@ p{
   display: none;
   position: absolute; 
   background-color: #242424; 
+  top: 100%;
+  left: 0;
   padding: 5px 0;
   margin-top: 5px;           
   border-radius: 5px;
@@ -344,7 +347,18 @@ p{
   display: block;
 }
 
+.mItem.dropdown {
+  display: flex;
+  align-items: center;
+}
 
+/* Ensure the dropdown button matches other menu items */
+.mItem.dropdown a {
+  padding: 10px 15px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
 
 
 

@@ -13,22 +13,30 @@
     </head>
 
     <body>
-        <nav >
+        <nav>
             <button class="menu-toggle">&#9776;</button>
-           
             <ul class="mBar">
-                <div class="menu-items">
-                    <li class="mItem"><a href="index.html">About</a></li>
-                    <li class="mItem"><a href="events.html">Events</a></li>
-                    <li class="mItem"><a href="gallery.html">Gallery</a></li> <!-- could swap to Creator Spotlight-->
-                    <li class="mItem"><a href="info.html"> Info</a></li>
-                    <li class="mItem"><a href="community.html">Community</a></li>
-                    <li class="mItem"><a href="faq.html">FAQ</a></li>
-                    
-                    
-                </div>
+              <div class="menu-items">
+                <li class="mItem"><a href="index.html">About</a></li>
+          
+                <!-- Dropdown starts here -->
+                <li class="mItem dropdown">
+                  <a href="events.html">Events</a>
+                  <ul class="dropdown-content">
+                    <li><a href="">Event 1</a></li>
+                    <li><a href="">Event 2</a></li>
+                    <li><a href="">Event 3</a></li>
+                  </ul>
+                </li>
+                <!-- Dropdown ends here -->
+          
+                <li class="mItem"><a href="gallery.html">Gallery</a></li>
+                <li class="mItem"><a href="info.html">Info</a></li>
+                <li class="mItem"><a href="community.html">Community</a></li>
+                <li class="mItem"><a href="faq.html">FAQ</a></li>
+              </div>
             </ul>
-        </nav>
+          </nav>
 
         <h1 class="centerTxt"> Welcome to the Creator Awards!!</h1>
 
